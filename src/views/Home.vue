@@ -50,6 +50,7 @@ export default {
     async getLatestProducts() {
       this.$store.commit("setIsLoading", true);
 
+      document.title = "Home | Djackets";
       await axios
         .get("/api/v1/latest-products/")
         .then((response) => {
