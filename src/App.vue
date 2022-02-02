@@ -67,7 +67,7 @@ export default {
     };
   },
   beforeCreate() {
-    this.$store.commit("initializeStore");
+    this.$store.commit("initializeStorage");
   },
   mounted() {
     this.cart = this.$store.state.cart;
