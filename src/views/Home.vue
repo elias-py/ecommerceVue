@@ -48,6 +48,7 @@ export default {
         .get("/api/v1/latest-products/")
         .then((response) => {
           this.latestProducts = response.data;
+          console.log("ola?");
         })
         .catch((error) => {
           console.log(error);
